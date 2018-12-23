@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exam</title>
+    <style>
+        #section{
+            width: 200px;
+            height: 250px;
+            text-align: center;
+            border: 5px firebrick solid;
+        }
+
+        #avatar{
+            height: 200px;
+            width: 200px;
+            top: 0%;
+            border: chartreuse 5px solid;
+        }
+
+        #linkAdress{
+            width: 200px;
+            height: 50px;
+            bottom: 0%;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            border: firebrick 5px solid;
+        }
+
+        #linkAdress:hover{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="section" id="section"></div>
+    <div><img src="img/qq.png" alt="" class="avatar" id="avatar"></div>
+    <div onclick="click()"><a href="" class="linkAdress" id="linkAdress">李组私房</a></div>
+</body>
+<script>
+    var div=document.getElementById("section");
+    var avatar=document.getElementById("avatar");
+    var a=document.getElementById("linkAdress");
+    function click(){
+        avatar.src="img/wechat.png"
+    }
+</script>
+</html>
